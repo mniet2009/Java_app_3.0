@@ -23,13 +23,13 @@ def jfrogUpload():
 def mvnBuild():
    maven_command = "mvn clean install -DskipTests"
 
-    try:
-       print("\nMaven build completed succesfully.")
-   except subprocess.CalledProcessError as e:
+try:
+    print("\nMaven build completed succesfully.")
+except subprocess.CalledProcessError as e:
        print(f"Error: Maven build failed with exit code (e.returncode)")
 
 def main():
-    mvnBuld()
+    mvnBuild()
     jfrogUpload()
 
 if __name__=="__main__":
