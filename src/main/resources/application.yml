@@ -10,3 +10,4 @@ logging:
 spring:
   application:
     name: minikube-sample
+    ................
